@@ -1,0 +1,50 @@
+.collectionCard {
+  color: white;
+  background-color: #1a1c1e;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+  margin-right: 30px;
+}
+
+.collectionCard .nft {
+  width: 100%;
+}
+
+.collectionCard .details {
+  padding: 20px;
+}
+
+.collectionCard .name {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.collectionCard .name .id {
+  color: #a1a5b0;
+  font-size: 18px;
+}
+
+.collectionCard .priceContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.collectionCard .priceContainer .wethImage {
+  height: 23px;
+  width: 10px;
+}
+
+.collectionCard .priceContainer .price {
+  margin-left: 5px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=CollectionCard.css.map */

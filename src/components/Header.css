@@ -1,0 +1,101 @@
+.header {
+  color: white;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+
+.header .punkLogo {
+  width: 200px;
+}
+
+.header .searchBar {
+  margin: 10px;
+  background-color: #1c1c1e;
+  height: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .searchBar .searchIconContainer {
+  margin: 10px;
+}
+
+.header .searchBar .searchInput {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  color: #eee;
+}
+
+.header .headerItems {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #a1a5b0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .headerItems p {
+  margin: 10px;
+}
+
+.header .headerActions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .headerActions .themeSwitchContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1c1c1e;
+  border-radius: 50px;
+  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header .headerActions .themeSwitchContainer img {
+  height: 25px;
+}
+
+.header .headerActions .loginButton {
+  background: -webkit-gradient(linear, left top, right top, from(#59f9b7), to(#66feea));
+  background: linear-gradient(to right, #59f9b7, #66feea);
+  padding: 15px 40px;
+  border-radius: 50px;
+  color: black;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=Header.css.map */
