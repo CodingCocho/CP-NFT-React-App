@@ -24,6 +24,7 @@
 .collectionCard .name .id {
   color: #a1a5b0;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .collectionCard .priceContainer {

@@ -1,6 +1,16 @@
 import React from 'react'
+import instagramLogo from '../assets/owner/instagram.png'
+import twitterLogo from '../assets/owner/twitter.png'
+import moreIcon from '../assets/owner/more.png'
+import './Main.css'
+import { useState, useEffect } from 'react'
 
-const Main = () => {
+const Main = ({selectedPunk, punkListData}) => {
+    const [activePunk, setActivePunk] = useState(punkListData[0])
+    
+    useEffect(() => {
+        setActivePunk(punkListData[selectedPunk])
+    }, [punkListData, selectedPunk])
     return (
         <div className="main">
             <div className="mainContent">
@@ -12,24 +22,34 @@ const Main = () => {
                 
                 <div className="punkDetails" style={{ color: '#fff' }}>
                     <div className='title'>
-                        {activePunk.name}
+                        {activePunk.name}   
                     </div>
                     <span className="itemNumber">
-                        .#3
+                        .#{activePunk.token_id}
                     </span>
-                </div>
-                <div className="owner">
+                    <div className="owner">
                     <div className="ownerImageContainer">
-                        <img src={''} alt=""/>
+                        <img src={activePunk.owner.profile_img_url} alt="nft"/>
                     </div>
                     <div className="ownerDetails">
                         <div className="ownerNameAndHandle">
-                            <div>
-                                0x
+                            <div className='ownerAddress'>
+                                {activePunk.owner.address}
                             </div>
                             <div className="ownerHandle">
-                                raulujr@gmail.comd
+                                raulujr@gmail.com
                             </div>
+                        </div>
+
+                        <div className='ownerLink'>
+                            <img src={instagramLogo} alt='logo'></img>
+                        </div>
+                        <div className='ownerLink'>
+                            <img src={twitterLogo} alt='logo'></img>
+                        </div>
+                        <div className='ownerLink'>
+                            <img src={moreIcon} alt='logo'></img>
+                        </div> 
                         </div>
                     </div>
                 </div>
