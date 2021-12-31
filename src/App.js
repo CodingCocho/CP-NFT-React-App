@@ -19,6 +19,7 @@ function App() {
 
     return getMyNfts()
  }, [])
+
   return (
     <div className="App">
         <Header />

@@ -11,6 +11,7 @@ const Main = ({selectedPunk, punkListData}) => {
     useEffect(() => {
         setActivePunk(punkListData[selectedPunk])
     }, [punkListData, selectedPunk])
+    
     return (
         <div className="main">
             <div className="mainContent">
